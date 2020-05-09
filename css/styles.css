@@ -1,0 +1,107 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* big screen menu */
+
+header {
+  display: none;
+}
+
+#off-canvas-wrapper {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top:0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#off-canvas-wrapper #nav {
+  display: block;
+  background-color: #006400;
+}
+
+#off-canvas-wrapper #nav #main-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+  background-color: #006400;
+  border-top: 5px solid #ffd700;
+  border-bottom: 5px solid #ffd700;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item > a {
+  display: block;
+  color: #ffffff;
+  font-weight: 575;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover > a {
+  background-color: #ffd700;
+  color: #006400;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item .submenu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: #eeeeee;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu {
+  display: flex;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 10px;
+  list-style: none;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li {
+  color: #006400;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 7px;
+  border-bottom: 1px solid #bebebe;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li > a {
+  color: #333333;
+  font-size: 16px;
+}
+
+#off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li > a:hover {
+  color: #ffffff;
+}

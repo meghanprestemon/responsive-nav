@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidearm Responsive Nav</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- small screens only -->
+      <a id="nav-toggle" href="#!">
+        <div id="hamburger-icon" class="hamburger-icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </header>
+    <div id="off-canvas-wrapper">
+      <!-- responsive menu -->
+      <nav id="nav" class="nav">
+        <ul id="main-menu">
+          <li class="menu-item has-submenu"><a href="#">Teams</a>
+            <div class="submenu">
+              <ul class="submenu-column">
+                <li><div>Men's Sports</div></li>
+                <li><a href="#">Baseball</a></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Cross Country</a></li>
+              </ul>
+              <ul class="submenu-column">
+                <li><div>Women's Sports</div></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Cross Country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item"><a href="#">Tickets</a></li>
+          <li class="menu-item"><a href="#">Patriot Club</a></li>
+          <li class="menu-item"><a href="#">Inside Athletics</a></li>
+          <li class="menu-item"><a href="#">Fan Central</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>
