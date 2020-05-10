@@ -166,4 +166,18 @@ header {
     -webkit-transform: rotate(45deg) translate(-7px, -7px);
     transform: rotate(45deg) translate(-7px, -7px);
   }
+
+  /* #off-canvas-wrapper #nav.off-canvas {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+    position: absolute;
+    width: 250px;
+    z-index: 9999;
+    top: 73px;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+  } */
+
 }
