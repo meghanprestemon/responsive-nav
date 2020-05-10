@@ -1,5 +1,12 @@
-function activateOffCanvasNav() {
-  this.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('loaded')
+  document.getElementById('hamburger-icon').addEventListener('click', activateOffCanvasNav)
+});
+
+function activateOffCanvasNav(e) {
+  console.log('in off canvas function')
+  e.currentTarget.classList.toggle('active');
+  console.log('hamburger active')
 
   // var mainMenu = document.getElementById("nav");
   //
@@ -20,9 +27,3 @@ function activateOffCanvasNav() {
 function activateSubmenu(e) {
    e.classList.toggle("dropdown");
 }
-
-const el = document.querySelector('.hamburger-icon');
-
-el.onclick = () => el.classList.toggle('active');
-
-document.querySelector('#nav-toggle').addEventListener('click', activateOffCanvasNav);
