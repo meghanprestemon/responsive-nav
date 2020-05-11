@@ -10,9 +10,9 @@ function activateSubmenu() {
    this.classList.toggle('dropdown');
 }
 
-// INITIALIZERS 
+// INITIALIZERS
 
-$(document).ready(function () {
-  $('#hamburger-icon').click(activateOffCanvasNav);
-  $('.has-submenu').click(activateSubmenu);
+document.addEventListener('DOMContentLoaded', function() {
+   document.querySelector('#hamburger-icon').addEventListener('click', activateOffCanvasNav);
+   document.querySelector('.has-submenu').addEventListener('click', activateSubmenu);
 });
