@@ -9,7 +9,7 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
-  text-transform: uppercase;
+  color: #fff;
 }
 
 /* big screen menu */
@@ -28,6 +28,7 @@ header {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  text-transform: uppercase;
 }
 
 #off-canvas-wrapper #nav {
@@ -52,7 +53,6 @@ header {
 
 #off-canvas-wrapper #nav #main-menu .menu-item > a {
   display: block;
-  color: #ffffff;
   font-weight: 575;
   text-align: center;
   padding-top: 25px;
@@ -70,7 +70,7 @@ header {
   display: none;
   position: fixed;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #eee;
   padding-top: 25px;
   padding-bottom: 30px;
   left: 0;
@@ -92,19 +92,17 @@ header {
 
 #off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li {
   color: #006400;
-  font-size: 18px;
-  text-transform: uppercase;
   padding-top: 7px;
-  border-bottom: 1px solid #bebebe;
+  box-shadow: 0px 2px #bebebe;
 }
 
 #off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li > a {
-  color: #333333;
+  color: #333;
   font-size: 16px;
 }
 
 #off-canvas-wrapper #nav #main-menu .menu-item:hover .submenu .submenu-column > li > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* small screen menu */
@@ -152,7 +150,7 @@ header {
 .bar1, .bar2, .bar3 {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin: 5px 0;
     transition: 0.4s;
   }
@@ -217,7 +215,7 @@ header {
 
   #off-canvas-wrapper.responsive #nav #main-menu .menu-item:hover > a {
     background-color: #006400;
-    color: #ffffff;
+    color: #fff;
   }
 
   #off-canvas-wrapper.responsive #nav #main-menu .menu-item:hover > a::after {
@@ -270,10 +268,9 @@ header {
   #off-canvas-wrapper.responsive #nav #main-menu .menu-item.dropdown .submenu .submenu-column > li {
     width: 250px;
     color: #ffd700;
-    text-transform: uppercase;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #006400;
+    box-shadow: 0px 2px #006400;
   }
 
   #off-canvas-wrapper.responsive #nav #main-menu .menu-item.dropdown .submenu .submenu-column > li > div {
@@ -283,7 +280,7 @@ header {
 
   #off-canvas-wrapper.responsive #nav #main-menu .menu-item.dropdown .submenu .submenu-column > li a {
     width: 250px;
-    color: #ffffff;
+    color: #fff;
     padding-left: 20px;
   }
 
